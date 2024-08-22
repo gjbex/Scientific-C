@@ -7,7 +7,7 @@ information on the training, see the website
 
 ## What is it?
 
-1. [`slides`](slides/): PowerPoint presentation used for the training.
+1. [`scientific_c.pptx`](scientific_c.pptx): PowerPoint presentation used for the training.
 1. [`source-code`](source-code): directory that contains sample code written to
    develop the slides and illustrate concepts.
 1. [License](LICENSE): license information for the material in this repository.

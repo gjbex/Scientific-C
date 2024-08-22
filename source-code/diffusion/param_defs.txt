@@ -1,0 +1,8 @@
+long	maxSteps	100
+long	deltaSteps	5
+long	leftWall	-30
+long	rightWall	30
+long	nrParticles	10
+int	constrained	0
+int	verbose	0
+long	seed	-1

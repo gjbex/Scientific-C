@@ -1,0 +1,13 @@
+a.exe
+.cvsignore
+lyapunov.txt
+lyapunov-low.txt
+nonlinear.txt
+vdp.txt
+vdp-b.txt
+chaos-data.txt
+chaos.ps
+chaos-detail-1.ps
+chaos-detail-2.ps
+chaos-detail-3.ps
+large-oscillations.txt

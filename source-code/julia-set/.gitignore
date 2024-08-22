@@ -1,0 +1,4 @@
+*.exe
+julia.txt
+conv.txt
+non_conv.txt

@@ -1,0 +1,7 @@
+double	n_a	1.0e3
+double	n_b	1.0e3
+double	n_ab	0.0
+double	k_B	1.0
+double	k_D	2.0
+double	t_max	0.05
+int	verbose	0

@@ -1,0 +1,14 @@
+double	g	9.81
+double	start_t	0.0
+double	end_t	20.0
+double	delta_t	0.005
+double	l	1.0
+double	q	0.0
+double	F_D	0.0
+double	Omega_D	2.0
+double	theta_0	0.1
+double	omega_0	0.0
+double	tol	1.0e-8
+long	nr_steps	10000
+int	verbose	1
+char *	method	'euler'

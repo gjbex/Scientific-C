@@ -1,0 +1,11 @@
+CC = gcc
+CFLAGS = -O2 -g -Wall -std=c99
+LIBS = -lm
+
+all: TODO.exe
+
+%.exe: %.c
+	$(CC) $(CFLAGS) -o $@ $^ $(LIBS)
+
+clean:
+	rm -f *.exe *.o core.*

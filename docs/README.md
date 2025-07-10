@@ -23,7 +23,7 @@ Total duration: 8 hours, split over two sessions.
 
 ### Session one
 
-Total duration: 4 hours
+Total duration: 8 hours
 
   | Subject                                     | Duration |
   |---------------------------------------------|----------|
@@ -72,6 +72,13 @@ This is not a training that starts from scratch.
 
 If you plan to do C programming in a Linux or HPC environment you should
 be familiar with these as well.
+
+
+## Level
+
+* Introductory: 40 %
+* Intermediate: 40 %
+* Advanced: 20 %
 
 
 ## Trainer(s)

@@ -9,3 +9,10 @@ set(CMAKE_C_EXTENSIONS OFF)
 add_executable(debug_info.exe
     debug_info.c
 )
+add_compile_options(debug_info.exe
+    PRIVATE
+        -Wall
+        -Wextra
+        -Wpedantic
+        -Werror
+)

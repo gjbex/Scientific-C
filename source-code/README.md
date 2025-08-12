@@ -7,6 +7,7 @@ Example codeillustrating various programming concepts and techniques.
 
 1. `assert`: example of using the `assert` macro for debugging.
 1. `c99`: example of using featured added in the C99 standard.
+1. `c11`: example of using features added in the C11 standard.
 1. `circuit`: example of using a linked list to represent a circuit.
 1. `cunit`: example of using the CUnit unit testing framework.
 1. `diffusion`: example of simulating diffusion, shows how to use

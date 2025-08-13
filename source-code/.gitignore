@@ -1,0 +1,13 @@
+# compiler artifacts
+*.o
+
+# libraries
+*.so
+*.a
+
+# executables
+a.out
+*.exe
+
+# CMake build directories
+build/

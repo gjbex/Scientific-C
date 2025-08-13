@@ -17,8 +17,8 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     for (int i = 0; i < n; i++) {
-        x[i] = 1.0 + (double)i / n;
-        y[i] = 1.0f + (float)i / n;
+        x[i] = 1.0 + ((double) i)/n;
+        y[i] = 1.0f + ((float) i)/n;
     }
 
     struct timespec start, end;

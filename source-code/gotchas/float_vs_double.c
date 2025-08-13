@@ -6,12 +6,12 @@
 int main(int argc, char *argv[]) {
     const int n = argc > 1 ? atoi(argv[1]) : 10000000;
     double *x = (double *)malloc(n * sizeof(double));
-    if (x == NULL) {
+    if (x == nullptr) {
         fprintf(stderr, "Memory allocation failed for x[%d]\n", n);
         return 1;
     }
     float *y = (float *)malloc(n * sizeof(float));
-    if (y == NULL) {
+    if (y == nullptr) {
         fprintf(stderr, "Memory allocation failed for y[%d]\n", n);
         free(x);
         return 1;

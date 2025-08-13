@@ -1,9 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
-project(gotchas C)
+project(gotchas LANGUAGES C)
 
 # Use C99 to match typical settings for these examples
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD 23)
 set(CMAKE_C_STANDARD_REQUIRED ON)
+# for timing functions like clock_gettime
+set(CMAKE_C_EXTENSIONS ON)
 
 # Option to include the intentionally failing 'errors' target
 option(BUILD_ERRORS "Build the 'errors' target with intentional compile errors" OFF)

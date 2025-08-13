@@ -6,5 +6,6 @@ to the C programming language.
 
 ## What is it?
 
+1. `bitints`: illustration of bit-precise integers.
 1. `checked_int_arithmetic`: illustrates checked integer arithmetic to
    detect overflow in arithmetic operations.

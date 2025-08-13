@@ -9,3 +9,4 @@ to the C programming language.
 1. `bitints`: illustration of bit-precise integers.
 1. `checked_int_arithmetic`: illustrates checked integer arithmetic to
    detect overflow in arithmetic operations.
+1. `booleans`: illustrates the new Boolean keywords.

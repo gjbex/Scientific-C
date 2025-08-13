@@ -17,8 +17,8 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     for (int i = 0; i < n; i++) {
-        x[i] = 1.0 + (double)i / n;
-        y[i] = 1.0f + (float)i / n;
+        x[i] = 1.0 + ((double) i)/n;
+        y[i] = 1.0f + ((float) i)/n;
     }
 
     struct timespec start, end;
@@ -47,9 +47,19 @@ int main(int argc, char *argv[]) {
     clock_gettime(CLOCK_MONOTONIC, &end);
     double time_taken_float_sin = (end.tv_sec - start.tv_sec) * 1000.0 + (end.tv_nsec - start.tv_nsec) / 1000000.0;
 
-    printf("Time taken for sin(double): %lf ms\n", time_taken_double);
-    printf("Time taken for sinf(float): %lf ms\n", time_taken_float_sinf);
-    printf("Time taken for sin(float):  %lf ms\n", time_taken_float_sin);
+#include <tgmath.h>
+    // Measure time for float
+    clock_gettime(CLOCK_MONOTONIC, &start);
+    for (int i = 0; i < n; i++) {
+        y[i] = sin(y[i]);
+    }
+    clock_gettime(CLOCK_MONOTONIC, &end);
+    double time_taken_float_tgsin = (end.tv_sec - start.tv_sec) * 1000.0 + (end.tv_nsec - start.tv_nsec) / 1000000.0;
+
+    printf("Time taken for sin(double):          %lf ms\n", time_taken_double);
+    printf("Time taken for sinf(float):          %lf ms\n", time_taken_float_sinf);
+    printf("Time taken for sin(float):           %lf ms\n", time_taken_float_sin);
+    printf("Time taken for sin(float) tgmatth.:  %lf ms\n", time_taken_float_tgsin);
 
     free(x);
     free(y);

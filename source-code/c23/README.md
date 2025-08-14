@@ -10,3 +10,4 @@ to the C programming language.
 1. `checked_int_arithmetic`: illustrates checked integer arithmetic to
    detect overflow in arithmetic operations.
 1. `booleans`: illustrates the new Boolean keywords.
+1. `typeof`: illustrates the use of the `typeof` operations.

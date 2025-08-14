@@ -22,6 +22,7 @@ Example codeillustrating various programming concepts and techniques.
 1. `julia-set`: example of generating a Julia set, illustrates the use
    of complex numbers.
 1. `netcdf`: example of using the NetCDF library.
+1. `openblas`: example of using the OpenBLAS library for linear algebra.
 1. `programming-exercises`: solutions to various programming exercises.
 1. `redis`: example of using the Redis key-value store.
 1. `stdarg`: example of using the `stdarg` library.

@@ -27,3 +27,4 @@ Example codeillustrating various programming concepts and techniques.
 1. `redis`: example of using the Redis key-value store.
 1. `stdarg`: example of using the `stdarg` library.
 1. `tree-2k`: example implementation of a spatial tree for k-D data.
+1. `arrays`: examples of using arrays in C.

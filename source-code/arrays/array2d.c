@@ -11,29 +11,32 @@ int main(int argc, char *argv[]) {
     int cols = atoi(argv[2]);
 
     // Allocate memory for a 2D array
-    int (*array)[cols] = malloc(rows*sizeof(*array));
-    if (array == NULL) {
+    double *data = (double *) malloc(rows * cols * sizeof(double));
+    if (data == NULL) {
         fprintf(stderr, "Memory allocation failed\n");
         return 1;
     }
 
+    // Create a view of the data as a 2D array
+    double (*array)[cols] = (double (*)[cols]) data;
+
     // Initialize the array with some values
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            array[i][j] = i*cols + j;
+            array[i][j] = (double) i*cols + j;
         }
     }
 
     // Print the array
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            printf("%3d ", array[i][j]);
+            printf("%6.1lf ", array[i][j]);
         }
         printf("\n");
     }
 
     // Free the allocated memory
-    free(array);
+    free(data);
 
     return 0;
 }

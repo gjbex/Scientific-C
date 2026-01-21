@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
     int cols = atoi(argv[2]);
 
     // Allocate memory for a 2D array
-    double *data = (double *) malloc(rows * cols * sizeof(double));
+    double *data = (double *) malloc(rows*cols*sizeof(double));
     if (data == NULL) {
         fprintf(stderr, "Memory allocation failed\n");
         return 1;
@@ -37,6 +37,32 @@ int main(int argc, char *argv[]) {
 
     // Free the allocated memory
     free(data);
+
+    // Alternatively, create view directly
+    double (*array2)[cols] = (double (*)[cols]) malloc(rows*sizeof(*array2));
+    if (array2 == NULL) {
+        fprintf(stderr, "Memory allocation failed\n");
+        return 1;
+    }
+    
+    // Initialize the second array with some values
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            array2[i][j] = (double) (i + 1) * (j + 1);
+        }
+    }
+
+    // Print the second array
+    printf("\nSecond array:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("%6.1lf ", array2[i][j]);
+        }
+        printf("\n");
+    }
+
+    // Free the allocated memory for the second array
+    free(array2);
 
     return 0;
 }

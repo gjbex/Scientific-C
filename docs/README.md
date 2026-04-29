@@ -73,6 +73,11 @@ This is not a training that starts from scratch.
 If you plan to do C programming in a Linux or HPC environment you should
 be familiar with these as well.
 
+### Software and access requirements
+
+To follow hands-on, you need a computer with a C development environment
+installed. You can of course use an HPC system you have access to as well.
+
 
 ## Level
 

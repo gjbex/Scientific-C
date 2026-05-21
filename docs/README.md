@@ -73,6 +73,28 @@ This is not a training that starts from scratch.
 If you plan to do C programming in a Linux or HPC environment you should
 be familiar with these as well.
 
+
+### Quick self-assessment
+
+The tasks below are not meant to test prior C knowledge. They describe
+programming concepts you should already recognize from another programming
+language. If you can do most of them in any language, you are likely ready for
+this training.
+
+* write a function that computes the average of a list of numbers;
+* loop over a collection and compute a derived result such as a sum or count;
+* use `if`/`else` or a `switch`-like construct to classify values into cases;
+* split a program into a few helper functions or files;
+* read data from a text file and print a simple summary;
+* read a short program and explain what it does;
+* compile or run a small program from the command line;
+* make a small change to an existing program and run it again.
+
+If several of these items still feel difficult, the training will probably move
+too fast. In that case, it is better to first take a short introductory
+programming course.
+
+
 ### Software and access requirements
 
 To follow hands-on, you need a computer with a C development environment

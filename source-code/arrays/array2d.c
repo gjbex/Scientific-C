@@ -40,6 +40,7 @@ int main(int argc, char *argv[]) {
 
     // Alternatively, create view directly
     double (*array2)[cols] = (double (*)[cols]) malloc(rows*sizeof(*array2));
+    printf("\nsizeof *array2: %zu\n", sizeof(*array2));
     if (array2 == NULL) {
         fprintf(stderr, "Memory allocation failed\n");
         return 1;

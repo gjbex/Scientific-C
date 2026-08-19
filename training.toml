@@ -1,0 +1,164 @@
+schema_version = 2
+id = "scientific-c"
+title = "Scientific C"
+content_language = "en"
+summary = """
+C is widely used in many contexts. This training focusses on using C for scientific programming.
+"""
+languages = ["C"]
+
+[[learning_outcomes]]
+statement = "Read and understand well-written C code."
+competencies = ["c.read-and-write-programs"]
+
+[[learning_outcomes]]
+statement = "Write intermediate-level C programs."
+competencies = ["c.read-and-write-programs"]
+
+[[learning_outcomes]]
+statement = "Have a good starting point to familiarize yourself with the more sophisticated aspects of C."
+
+[[learning_outcomes]]
+statement = "Know about best practices and pitfalls for C programmers."
+competencies = ["c.apply-best-practices"]
+
+[[learning_outcomes]]
+statement = "Have a working knowledge of the C standard Library."
+competencies = ["c.use-standard-library"]
+
+[[learning_outcomes]]
+statement = "Know how to use third-party libraries such as GSL for numerical computing."
+competencies = ["c.use-numerical-libraries"]
+
+[source]
+metadata_document = "docs/README.md"
+repository_url = "https://github.com/gjbex/Scientific-C/"
+website_url = "https://gjbex.github.io/Scientific-C/"
+license = "CC-BY-4.0"
+
+[delivery]
+duration_minutes = 480
+duration_kind = "fixed"
+session_count = 2
+target_session_duration_minutes = 240
+schedule_complete = true
+description = """
+Total duration: 8 hours, split over two sessions. Total duration: 8 hours Total duration: 4 hours
+"""
+
+[audience]
+description = """
+This training is for you if you need to use C as a programming language.
+"""
+
+[prerequisites]
+summary = """
+You will need experience programming in another programming language, This is not a training that starts from scratch. If you plan to do C programming in a Linux or HPC environment you should be familiar with these as well.
+"""
+competencies = ["programming.control-flow", "programming.functions", "programming.basic-data-structures", "programming.program-decomposition", "programming.text-file-io", "programming.read-and-trace-code", "command-line.run-or-compile-programs"]
+
+[self_assessment]
+introduction = """
+The tasks below are not meant to test prior C knowledge. They describe programming concepts you should already recognize from another programming language. If you can do most of them in any language, you are likely ready for this training.
+"""
+tasks = [
+  "Write a function that computes the average of a list of numbers.",
+  "Loop over a collection and compute a derived result such as a sum or count.",
+  "Use `if`/`else` or a `switch`-like construct to classify values into cases.",
+  "Split a program into a few helper functions or files.",
+  "Read data from a text file and print a simple summary.",
+  "Read a short program and explain what it does.",
+  "Compile or run a small program from the command line.",
+  "Make a small change to an existing program and run it again."
+]
+
+[level]
+introductory_percent = 40
+intermediate_percent = 40
+advanced_percent = 20
+
+[[materials]]
+kind = "slides"
+path = "scientific_c.pptx"
+
+[[materials]]
+kind = "source-code"
+path = "source-code"
+
+[[trainers]]
+name = "Geert Jan Bex"
+email = "geertjan.bex@uhasselt.be"
+
+[[maintainers]]
+name = "Geert Jan Bex"
+email = "geertjan.bex@uhasselt.be"
+
+[[sessions]]
+id = "session-1"
+title = "Session one"
+duration_minutes = 240
+
+[[sessions.items]]
+subject = "introduction and motivation"
+duration_minutes = 5
+
+[[sessions.items]]
+subject = "basics: control flow statements, data types"
+duration_minutes = 85
+
+[[sessions.items]]
+subject = "hands-on session"
+duration_minutes = 20
+
+[[sessions.items]]
+subject = "coffee break"
+duration_minutes = 10
+
+[[sessions.items]]
+subject = "functions"
+duration_minutes = 15
+
+[[sessions.items]]
+subject = "simple I/O"
+duration_minutes = 10
+
+[[sessions.items]]
+subject = "arrays and user defined types"
+duration_minutes = 85
+
+[[sessions.items]]
+subject = "hands-on session"
+duration_minutes = 20
+
+[[sessions]]
+id = "session-2"
+title = "Session two"
+duration_minutes = 240
+
+[[sessions.items]]
+subject = "pointers & dynamic memory management"
+duration_minutes = 80
+
+[[sessions.items]]
+subject = "hands-on session"
+duration_minutes = 20
+
+[[sessions.items]]
+subject = "error handling"
+duration_minutes = 10
+
+[[sessions.items]]
+subject = "coffee break"
+duration_minutes = 10
+
+[[sessions.items]]
+subject = "using third-party libraries"
+duration_minutes = 80
+
+[[sessions.items]]
+subject = "hands-on session"
+duration_minutes = 20
+
+[[sessions.items]]
+subject = "wrap up"
+duration_minutes = 10
